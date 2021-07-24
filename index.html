@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Tip calculator app</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="splitter">
+        SPLI <br />
+        TTER
+      </div>
+      <div class="calc-container">
+        <div class="calculator">
+          <div class="bill">
+            <h1>Bill</h1>
+            <section>
+              <input type="number" class="total-bill" />
+            </section>
+          </div>
+
+          <div class="tip-selector">
+            <h1>Select Tip %</h1>
+            <div class="tip-buttons">
+              <button class="tip-button five-percent">5%</button>
+              <button class="tip-button" id="ten-percent">10%</button>
+              <button class="tip-button" id="fifteen-percent">15%</button>
+              <button class="tip-button" id="twentyfive-percent">25%</button>
+              <button class="tip-button" id="fifty-percent">50%</button>
+              <section class="tip-button" action="">
+                <input type="number" class="custom-tip" placeholder="$" />
+              </section>
+            </div>
+          </div>
+          <div class="number-of-people">
+            <h1>Number of People</h1>
+            <section action="">
+              <input type="number" class="people" />
+            </section>
+          </div>
+        </div>
+
+        <div class="tip-display">
+          <div class="tip-amount">
+            <div class="tip-amount_left">
+              <h3>Tip Amount</h3>
+              <p>/person</p>
+            </div>
+            <div class="tip-amount_right total-tip">$0.00</div>
+          </div>
+          <div class="tip-amount">
+            <div class="tip-amount_left">
+              <h3>Total</h3>
+              <p>/person</p>
+            </div>
+            <div class="tip-amount_right total-amount total-total">$0.00</div>
+          </div>
+          <button class="reset">Reset</button>
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <script src="script.js"></script>
+</html>
